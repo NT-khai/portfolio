@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>052205006847_NGUYENTANKHAI</title>
+  </head>
+  <body>
+    <div class="min-h-screen bg-gray-100">
+      <!-- Navbar -->
+      <nav
+        style="background-color: rgb(32, 30, 28, 0.3)"
+        id="navbar"
+        class="absolute top-0 left-0 right-0 z-50 transition-all duration-300 shadow bg-gray-200"
+      >
+        <div
+          class="container mx-auto flex items-center justify-between py-6 px-4 relative"
+        >
+          <div
+            class="flex items-center text-2xl sm:text-3xl font-bold"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <span class="text-white">PORT</span>
+            <span class="text-purple-500">FOLIO</span>
+          </div>
+          <ul
+            class="lg:flex items-center gap-4 font-medium text-white hidden"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <li>
+              <a
+                href="#"
+                class="p-3 hover:text-purple-500 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#About"
+                class="p-3 hover:text-purple-500 transition duration-300"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#Tool"
+                class="p-3 hover:text-purple-500 transition duration-300"
+                >Tool</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Project"
+                class="p-3 hover:text-purple-500 transition duration-300"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Contact"
+                class="p-3 hover:text-purple-500 transition duration-300"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="w-auto absolute top-0 right-4 grid justify-center text-center items-center font-medium lg:hidden bg-white shadow-[4px_4px_10px_0px_#ddd] rounded-lg mt-[85px] phone-menu hidden overflow-hidden"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-14 py-2.5 hover:bg-[#9333ea14] transition duration-300 hover:text-purple-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#About"
+                class="block px-14 py-2.5 hover:bg-[#9333ea14] transition duration-300 hover:text-purple-500"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#Tool"
+                class="block px-14 py-2.5 hover:bg-[#9333ea14] transition duration-300 hover:text-purple-500"
+                >Tool</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Project"
+                class="block px-14 py-2.5 hover:bg-[#9333ea14] transition duration-300 hover:text-purple-500"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Contact"
+                class="block px-14 py-2.5 hover:bg-[#9333ea14] transition duration-300 hover:text-purple-500"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+          <div class="block lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="cursor-pointer text-white open-menu"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6h16" />
+              <path d="M7 12h13" />
+              <path d="M10 18h10" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="cursor-pointer text-white close-menu hidden"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 6l-12 12" />
+              <path d="M6 6l12 12" />
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="w-full flex items-center justify-center min-h-screen overflow-hidden bg-gradient-to-b from-[#121212] to-purple-800"
+      >
+        <!-- Overlay for better text visibility -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <!-- Content -->
+        <div
+          class="relative z-10 container mx-auto px-4 text-center text-white"
+        >
+          <h1
+            class="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+            style="line-height: 1.2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            Fullstack Developer -
+            <span
+              class="relative whitespace-nowrap text-purple-400 dark:text-purple-400"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                class="absolute top-2/3 left-0 h-[0.58em] w-full fill-purple-400/70 dark:fill-purple-300/60"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.780 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.540-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.810 23.239-7.825 27.934-10.149 28.304-14.005 .417-4.348-3.529-6-16.878-7.066Z"
+                ></path>
+              </svg>
+              <span class="relative">Backend</span>
+            </span>
+            chuyên sâu
+          </h1>
+          <p
+            class="mx-auto mb-8 max-w-2xl text-xl"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            Mong muốn trở thành Backend Developer chuyên sâu, tập trung vào
+            thiết kế hệ thống hiệu quả và mở rộng.
+          </p>
+        </div>
+        <!-- Scroll Down Icon - Fixed and Properly Centered -->
+        <div
+          class="absolute bottom-10 inset-x-0 mx-auto w-10 animate-bounce z-20 flex justify-center"
+        >
+          <a href="#About" class="cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- script -->
+      <script>
+        // Navbar
+        const phoneMenu = document.querySelector(".phone-menu");
+        const openMenu = document.querySelector(".open-menu");
+        const closeMenu = document.querySelector(".close-menu");
+        openMenu.addEventListener("click", () => {
+          phoneMenu.classList.remove("hidden");
+          phoneMenu.classList.add("block");
+          openMenu.classList.add("hidden");
+          closeMenu.classList.remove("hidden");
+        });
+        closeMenu.addEventListener("click", () => {
+          phoneMenu.classList.add("hidden");
+          phoneMenu.classList.remove("block");
+          openMenu.classList.remove("hidden");
+          closeMenu.classList.add("hidden");
+        });
+        document.addEventListener("click", (event) => {
+          const isClickInsideMenu = phoneMenu.contains(event.target);
+          const isClickOnOpenButton = openMenu.contains(event.target);
+          const isClickOnCloseButton = closeMenu.contains(event.target);
+          if (
+            !isClickInsideMenu &&
+            !isClickOnOpenButton &&
+            !isClickOnCloseButton
+          ) {
+            phoneMenu.classList.add("hidden");
+            phoneMenu.classList.remove("block");
+            openMenu.classList.remove("hidden");
+            closeMenu.classList.add("hidden");
+          }
+        });
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 50) {
+            navbar.classList.remove("absolute");
+            navbar.classList.add("fixed", "bg-white/20", "backdrop-blur-xl");
+          } else {
+            navbar.classList.remove("fixed", "bg-white/20", "backdrop-blur-xl");
+            navbar.classList.add("absolute");
+          }
+        });
+      </script>
+    </div>
+
+    <!--About-->
+
+    <div class="bg-gray-200" id="About">
+      <!-- About Section -->
+      <section class="py-5 text-[#2d3a54] bg-gray-100 px-4">
+        <div
+          class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-20"
+        >
+          <div class="flex-1">
+            <div class="w-full lg:w-[600px] relative">
+              <img
+                src="nguyentankhai.png"
+                alt="image"
+                class="w-auto relative"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+            </div>
+          </div>
+          <div class="flex-1" data-aos="fade-left" data-aos-duration="2000">
+            <h2 class="text-xl font-medium text-[#00a68e] pb-3 pt-20">
+              About Us
+            </h2>
+            <h3 class="text-3xl font-medium pb-6">NGUYỄN TẤN KHẢI</h3>
+            <ul class="flex gap-2 pb-1">
+              <li class="w-12 h-1 rounded-lg bg-[#00a68e]"></li>
+              <li class="w-6 h-1 rounded-lg bg-[#00a68e]"></li>
+              <li class="w-4 h-1 rounded-lg bg-[#00a68e]"></li>
+            </ul>
+            <p class="text-2xl">
+              Chuyên Ngành: Kỹ sư phần mềm Fullstack – thiên về backend
+            </p>
+            <p class="pb-5 text-2xl">Lớp: CN2301CLCB - Khóa: 2023</p>
+            <p class="pb-5 text-2xl">
+              Thế Mạnh: Giao Tiếp Tốt, Làm Việt Nhóm, Giải Quyết Vấn Đề, Tự Học
+              Tìm Hiểu Công Nghệ Mới
+            </p>
+            <p class="pb-5 text-2xl">Ngôn Ngữ:</p>
+            <div class="">
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>C++</span>
+                  <span>85%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[85%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>C#</span>
+                  <span>80%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[80%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>python</span>
+                  <span>70%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[80%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>Html/Css</span>
+                  <span>90%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[90%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>Javascript</span>
+                  <span>85%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[85%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>Typescript</span>
+                  <span>80%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[80%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>MySQL</span>
+                  <span>80%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[80%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+
+              <div class="pb-5">
+                <div
+                  class="flex justify-between gap-5 text-md font-medium pb-2"
+                >
+                  <span>SQL Server</span>
+                  <span>50%</span>
+                </div>
+                <div class="relative">
+                  <span
+                    class="w-full h-2.5 bg-[#c8cbd2] rounded-lg block"
+                  ></span>
+                  <span
+                    class="absolute top-0 w-[50%] h-2.5 bg-[#00a68e] rounded-lg block"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Các Công cụ hỗ trợ-->
+    <div class="flex items-center justify-center bg-gray-100 ">
+      <!-- Link -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+
+      <!-- Style -->
+      <style>
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "" !important;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "" !important;
+        }
+
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          width: 24px !important;
+          height: 24px !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: relative !important;
+          margin-top: 32px;
+        }
+
+        .swiper-slide.swiper-slide-active {
+          --tw-border-opacity: 1 !important;
+          border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+        }
+
+        .swiper-slide.swiper-slide-active
+          > .swiper-slide-active\:text-indigo-600 {
+          --tw-text-opacity: 1;
+          color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+
+        .swiper-slide.swiper-slide-active
+          > .flex
+          .grid
+          .swiper-slide-active\:text-indigo-600 {
+          --tw-text-opacity: 1;
+          color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+      </style>
+
+      <!-- Testimonial Slider -->
+      <section class="w-full bg-white py-50 pt-110" id="Tool">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 max-w-sm sm:max-w-2xl lg:max-w-full mx-auto"
+          >
+            <div class="w-full lg:w-2/5"                 
+            data-aos="fade-right"
+                data-aos-duration="2000">
+              <h2
+                class="text-4xl font-bold text-gray-900 leading-[3rem] lg:leading-[3.25rem] text-center lg:text-left"
+              >
+                Công Cụ - Thư Viện Đã Học
+              </h2>
+              <!-- Slider controls -->
+              <div
+                class="flex items-center justify-center lg:justify-start gap-10"
+              >
+                <button
+                  id="slider-button-left"
+                  class="swiper-button-prev group flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-lg hover:bg-indigo-600"
+                  data-carousel-prev
+                >
+                  <svg
+                    class="h-6 w-6 text-indigo-600 group-hover:text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  id="slider-button-right"
+                  class="swiper-button-next group flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-lg hover:bg-indigo-600"
+                  data-carousel-next
+                >
+                  <svg
+                    class="h-6 w-6 text-indigo-600 group-hover:text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-3/5"  data-aos="fade-left"
+                data-aos-duration="2000">
+              <!--Slider wrapper-->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://images.viblo.asia/548b7fea-3301-4c27-b436-2d3a70606d81.png"
+                        alt="React"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          React
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      là một thư viện JavaScript mã nguồn mở do Facebook phát triển, chuyên dùng để xây dựng giao diện người dùng (UI) cho các ứng dụng web có tính tương tác cao.
+                    </p>
+                  </div>
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://whitehat.vn/attachments/git-png.17324/"
+                        alt="Git"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          Git
+                        </h5>
+                       
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                     Git là một hệ thống quản lý phiên bản phân tán, được sử dụng phổ biến trong phát triển phần mềm để theo dõi và quản lý lịch sử thay đổi của mã nguồn.
+                    </p>
+                  </div>
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://yt3.googleusercontent.com/PKRBxhCiGa8Y0vPmHa1E2cdjpLhUq2Pl-gESwP7kk2plGgxLdsbjyTd9VjcJwBMiY0HQ8bvx5Q=s900-c-k-c0x00ffffff-no-rj"
+                        alt="GitHub"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          GitHub
+                        </h5>
+
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                     một nền tảng lưu trữ mã nguồn dựa trên web, sử dụng hệ thống quản lý phiên bản Git.
+                    </p>
+                  </div>
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://ncarb.github.io/bootstrap/assets/img/bootstrap-stack.png"
+                        alt="bootstrap"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          bootstrap
+                        </h5>
+                        
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      framework front-end mã nguồn mở giúp lập trình viên thiết kế giao diện website nhanh chóng, đẹp mắt và tương thích với nhiều thiết bị.
+                    </p>
+                  </div>
+
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSDKn3vA2YUbXzN0ZC3gALWJ08gJN-Drl15w&s"
+                        alt="Tailwind"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          TailWind
+                        </h5>
+                        
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      framework CSS mã nguồn mở theo triết lý utility-first, nghĩa là thay vì viết các class CSS riêng biệt cho từng thành phần
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Script -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 28,
+          centeredSlides: false,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: false,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 28,
+              centeredSlides: false,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 32,
+            },
+          },
+        });
+      </script>
+    </div>
+
+
+    <!--Project-->
+    <div class="flex items-center justify-center bg-gray-100" id="Project">
+      <!-- Link -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+
+      <!-- Style -->
+      <style>
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+          content: "" !important;
+        }
+
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+          content: "" !important;
+        }
+
+        .swiper-button-next svg,
+        .swiper-button-prev svg {
+          width: 24px !important;
+          height: 24px !important;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: relative !important;
+          margin-top: 32px;
+        }
+
+        .swiper-slide.swiper-slide-active {
+          --tw-border-opacity: 1 !important;
+          border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+        }
+
+        .swiper-slide.swiper-slide-active
+          > .swiper-slide-active\:text-indigo-600 {
+          --tw-text-opacity: 1;
+          color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+
+        .swiper-slide.swiper-slide-active
+          > .flex
+          .grid
+          .swiper-slide-active\:text-indigo-600 {
+          --tw-text-opacity: 1;
+          color: rgb(79 70 229 / var(--tw-text-opacity));
+        }
+      </style>
+
+      <!-- Testimonial Slider -->
+      <section class="w-full bg-white py-50 pt-110" id="Tool">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex justify-center items-center gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8 max-w-sm sm:max-w-2xl lg:max-w-full mx-auto"
+          >
+            <div class="w-full lg:w-2/5"                 
+            data-aos="fade-right"
+                data-aos-duration="2000">
+            <span
+              class="relative whitespace-nowrap text-purple-400 dark:text-purple-400 mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+            >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 418 42"
+                class="absolute top-2/3 left-0 h-[0.58em] w-full fill-purple-400/70 dark:fill-purple-300/60"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.780 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.540-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.810 23.239-7.825 27.934-10.149 28.304-14.005 .417-4.348-3.529-6-16.878-7.066Z"
+                ></path>
+              </svg>
+              <span class="relative ">Project</span>
+            </span>
+              <!-- Slider controls -->
+              <div
+                class="flex items-center justify-center lg:justify-start gap-10"
+              >
+                <button
+                  id="slider-button-left"
+                  class="swiper-button-prev group flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-lg hover:bg-indigo-600"
+                  data-carousel-prev
+                >
+                  <svg
+                    class="h-6 w-6 text-indigo-600 group-hover:text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  id="slider-button-right"
+                  class="swiper-button-next group flex justify-center items-center border border-solid border-indigo-600 !w-12 !h-12 transition-all duration-500 rounded-lg hover:bg-indigo-600"
+                  data-carousel-next
+                >
+                  <svg
+                    class="h-6 w-6 text-indigo-600 group-hover:text-white"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-3/5"  data-aos="fade-left"
+                data-aos-duration="2000">
+              <!--Slider wrapper-->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                        alt="React"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          Dự Án 1
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      CRUD đơn giản với HTML - CSS - JavaScript <br> <a href="https://github.com/NT-khai/CRUD" target="_blank" rel="noopener noreferrer">xem chi tiết</a>
+                    </p>
+                  </div>
+
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                        alt="React"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          Dự Án 2
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      Thực hành với React + TailWind <br> <a href="https://react-tailwind-peach.vercel.app/" target="_blank" rel="noopener noreferrer">xem chi tiết</a>
+                    </p>
+                  </div>
+
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                        alt="React"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          Dự Án 3
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      Thực hành đơn giản với Typescript <br> <a href="https://github.com/NT-khai/ts-coban" target="_blank" rel="noopener noreferrer">xem chi tiết</a>
+                    </p>
+                  </div>
+
+                  <div
+                    class="swiper-slide group bg-white border border-solid border-gray-300 rounded-2xl max-sm:max-w-sm max-sm:mx-auto p-6 transition-all duration-500 hover:border-indigo-600"
+                  >
+                    <div class="flex items-center gap-5 mb-5 sm:mb-9">
+                      <img
+                        class="rounded-full object-cover w-14 h-14"
+                        src="https://cdn.vietnambiz.vn/2020/3/24/project-planning-header2x-1585044567657817815413.png"
+                        alt="React"
+                      />
+                      <div class="grid gap-1">
+                        <h5
+                          class="text-gray-900 font-medium transition-all duration-500"
+                        >
+                          Dự Án 4
+                        </h5>
+                      </div>
+                    </div>
+                    <div
+                      class="flex items-center mb-5 sm:mb-9 gap-2 text-amber-500 transition-all duration-500"
+                    >
+                      
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                      <svg
+                        class="w-5 h-5"
+                        viewBox="0 0 18 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.10326 1.31699C8.47008 0.57374 9.52992 0.57374 9.89674 1.31699L11.7063 4.98347C11.8519 5.27862 12.1335 5.48319 12.4592 5.53051L16.5054 6.11846C17.3256 6.23765 17.6531 7.24562 17.0596 7.82416L14.1318 10.6781C13.8961 10.9079 13.7885 11.2389 13.8442 11.5632L14.5353 15.5931C14.6754 16.41 13.818 17.033 13.0844 16.6473L9.46534 14.7446C9.17402 14.5915 8.82598 14.5915 8.53466 14.7446L4.91562 16.6473C4.18199 17.033 3.32456 16.41 3.46467 15.5931L4.15585 11.5632C4.21148 11.2389 4.10393 10.9079 3.86825 10.6781L0.940384 7.82416C0.346867 7.24562 0.674378 6.23765 1.4946 6.11846L5.54081 5.53051C5.86652 5.48319 6.14808 5.27862 6.29374 4.98347L8.10326 1.31699Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <p
+                      class="text-gray-500 leading-6 transition-all duration-500 min-h-24 group-hover:text-gray-800"
+                    >
+                      Thực hành kết nối quan mạng theo mô hình client-sever: Hệ thống đặc vé xe <br> <a href="https://github.com/khaint14/Nhom6-final" target="_blank" rel="noopener noreferrer">xem chi tiết</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Script -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: 28,
+          centeredSlides: false,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: false,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 28,
+              centeredSlides: false,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 32,
+            },
+          },
+        });
+      </script>
+    </div>
+
+<div class="bg-gray-100" id="Contact">
+  <footer class="bg-gradient-to-br from-indigo-50 via-blue-50 to-sky-50 relative overflow-hidden">
+    <!-- Animated Background Blobs (z-index thấp) -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none z-0">
+      <div class="absolute top-0 left-0 w-72 h-72 bg-gradient-to-r from-sky-400 to-blue-400 rounded-full mix-blend-multiply filter blur-xl animate-blob"></div>
+      <div class="absolute top-0 right-0 w-72 h-72 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000"></div>
+      <div class="absolute bottom-0 left-1/2 w-72 h-72 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
+    </div>
+
+    <!-- Main Footer Content (z-index cao) -->
+    <div class="relative z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12">
+          
+          <!-- Logo & Description -->
+          <div class="space-y-6 text-center lg:text-left flex-1">
+            <div class="flex items-center justify-center lg:justify-start space-x-3">
+              <div class="w-12 h-12 bg-gradient-to-tr from-violet-600 to-indigo-600 rounded-xl flex items-center justify-center transform rotate-6 hover:rotate-0 transition-transform duration-300 shadow-lg">
+                <span class="text-white text-2xl font-bold">P</span>
+              </div>
+              <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 text-2xl font-bold">
+                ORTFOLIO
+              </h3>
+            </div>
+            <p class="text-gray-600 text-sm max-w-xs mx-auto lg:mx-0">Bài kiểm tra giữa kỳ</p>
+            
+            <!-- Social Media Icons - CLICKABLE 100% -->
+            <div class="flex justify-center lg:justify-start space-x-4 pt-4">
+              
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/uchihakhaiuk/" target="_blank" rel="" 
+                 class="group cursor-pointer block" title="Facebook">
+                <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-blue-700 rounded-lg flex items-center justify-center hover:shadow-lg hover:shadow-blue-200 transition-all duration-300 hover:scale-110">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/NT-khai" target="_blank" rel="" 
+                 class="group cursor-pointer block" title="GitHub">
+                <div class="w-10 h-10 bg-gradient-to-tr from-gray-700 to-gray-900 rounded-lg flex items-center justify-center hover:shadow-lg hover:shadow-gray-300 transition-all duration-300 hover:scale-110">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.375-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+              </a>
+              
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/1111_ntk/" target="_blank" rel="" 
+                 class="group cursor-pointer block" title="Instagram">
+                <div class="w-10 h-10 bg-gradient-to-tr from-pink-500 to-purple-600 rounded-lg flex items-center justify-center hover:shadow-lg hover:shadow-pink-200 transition-all duration-300 hover:scale-110">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+              </a>
+              
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-6 w-full lg:w-auto">
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-indigo-600 text-xl font-bold text-center lg:text-left">
+              Contact Me
+            </h3>
+            <ul class="space-y-4 max-w-md mx-auto lg:mx-0">
+              <li class="group cursor-pointer">
+                <div class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-violet-100 to-indigo-100 flex items-center justify-center group-hover:from-violet-200 group-hover:to-indigo-200 transition-colors duration-300 shrink-0">
+                    <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                  </div>
+                  <span class="text-gray-600 group-hover:text-violet-600 transition-colors duration-300 text-sm"><a href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Giao+Th%C3%B4ng+V%E1%BA%ADn+T%E1%BA%A3i+Th%C3%A0nh+Ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh+-+C%C6%A1+s%E1%BB%9F+1/@10.8045323,106.7164671,21z/data=!4m10!1m2!2m1!1zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBHaWFvIFRow7RuZyBW4bqtbiBU4bqjaSBUaMOgbmggUGjhu5EgSOG7kyBDaMOtIE1pbmggKFVUSCkgLSBDxqEgc-G7nyAx!3m6!1s0x3175293dceb22197:0x755bb0f39a48d4a6!8m2!3d10.8045178!4d106.7167175!15sCl1Ucsaw4budbmcgxJDhuqFpIEjhu41jIEdpYW8gVGjDtG5nIFbhuq1uIFThuqNpIFRow6BuaCBQaOG7kSBI4buTIENow60gTWluaCAoVVRIKSAtIEPGoSBz4bufIDFaWyJZdHLGsOG7nW5nIMSR4bqhaSBo4buNYyBnaWFvIHRow7RuZyB24bqtbiB04bqjaSB0aMOgbmggcGjhu5EgaOG7kyBjaMOtIG1pbmggdXRoIGPGoSBz4bufIDGSAQdjb2xsZWdlmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJJZWsxaGJuVjNSUkFCqgGiAQoKL20vMDJxMl9fMhABKhIiDnV0aCBjxqEgc-G7nyAxKEIyHxABIhseBjGpYLcjLR9HJHS9ACAxiL9_8hqGyq11oN8yXRACIll0csaw4budbmcgxJHhuqFpIGjhu41jIGdpYW8gdGjDtG5nIHbhuq1uIHThuqNpIHRow6BuaCBwaOG7kSBo4buTIGNow60gbWluaCB1dGggY8ahIHPhu58gMeABAPoBBAh9EEk!16s%2Fm%2F02q2__2?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Đại Học Giao Thông Vận Tải TP.HCM</a></span>
+                </div>
+              </li>
+              <li class="group cursor-pointer">
+                <div class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-violet-100 to-indigo-100 flex items-center justify-center group-hover:from-violet-200 group-hover:to-indigo-200 transition-colors duration-300 shrink-0">
+                    <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <span class="text-gray-600 group-hover:text-violet-600 transition-colors duration-300 text-sm break-all">khaint6847@ut.edu.vn</span>
+                </div>
+              </li>
+              <li class="group cursor-pointer">
+                <div class="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
+                  <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-violet-100 to-indigo-100 flex items-center justify-center group-hover:from-violet-200 group-hover:to-indigo-200 transition-colors duration-300 shrink-0">
+                    <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                  </div>
+                  <span class="text-gray-600 group-hover:text-violet-600 transition-colors duration-300 text-sm">+84 387 920 259</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
