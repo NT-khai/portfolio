@@ -290,6 +290,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   margin-top: 10px;
+  margin: 0px;
 }
 
 /* Phần chạy màu */
@@ -1037,4 +1038,54 @@ body {
 /* Khi click */
 .download-btn:active {
   transform: scale(0.97);
+}
+
+/* 🧠 Tooltip hiển thị tên ngôn ngữ khi hover */
+.language-item {
+  position: relative;
+}
+
+/* Tooltip mặc định ẩn */
+.language-item::after {
+  content: attr(data-name);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background: rgba(0, 224, 255, 0.9);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.7);
+}
+
+/* Khi hover vào item -> hiện tooltip */
+.language-item:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  bottom: 130%;
+}
+
+/* Mũi nhọn nhỏ dưới tooltip */
+.language-item::before {
+  content: "";
+  position: absolute;
+  bottom: 112%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 224, 255, 0.9) transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.language-item:hover::before {
+  opacity: 1;
 }
