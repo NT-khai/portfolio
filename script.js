@@ -32,36 +32,22 @@ for (let i = 0; i < numParticles; i++) {
   particlesContainer.appendChild(particle);
 }
 
-// 🌈 Animation cho progress bar khi cuộn tới section
-const progressBars = document.querySelectorAll(".progress");
-const ngonNguSection = document.querySelector("#ngon-ngu");
+// ✅ Hiển thị thanh tiến độ và phần trăm ngay khi load
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("#ngon-ngu .progress").forEach((bar) => {
+    const percent = parseInt(bar.getAttribute("data-percent"));
+    const percentLabel = bar.parentElement.querySelector(".progress-percent");
 
-const progressObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        progressBars.forEach((bar) => {
-          const percent = parseInt(bar.getAttribute("data-percent"));
-          let current = 0;
-          const percentLabel =
-            bar.parentElement.querySelector(".progress-percent");
-
-          // Animation tăng dần thanh + số %
-          const interval = setInterval(() => {
-            if (current >= percent) {
-              clearInterval(interval);
-            } else {
-              current++;
-              bar.style.width = `${current}%`;
-              percentLabel.textContent = `${current}%`;
-            }
-          }, 15);
-        });
-        observer.unobserve(ngonNguSection);
+    // Hiệu ứng tăng dần (mượt mà)
+    let current = 0;
+    const interval = setInterval(() => {
+      if (current >= percent) {
+        clearInterval(interval);
+      } else {
+        current++;
+        bar.style.width = `${current}%`;
+        percentLabel.textContent = `${current}%`;
       }
-    });
-  },
-  { threshold: 0.4 }
-);
-
-progressObserver.observe(ngonNguSection);
+    }, 15);
+  });
+});

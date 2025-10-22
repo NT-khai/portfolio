@@ -219,12 +219,16 @@ body {
 /* ===========================
    5️⃣ Ngôn ngữ & Thư viện
 =========================== */
+/* Khu vực chung */
 #ngon-ngu {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: #f8fafc;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  margin-bottom: 60px;
 }
 
+/* Bố cục 2 cột */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -234,52 +238,85 @@ body {
 
 .languages-column,
 .libraries-column {
-  flex: 1 1 400px;
-  background: rgba(255, 255, 255, 0.05);
+  flex: 1;
+  min-width: 280px;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.08);
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
+.languages-column h3,
+.libraries-column h3 {
+  color: #00e0ff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Danh sách ngôn ngữ */
+.languages-list,
+.libraries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Mỗi item */
 .language-item {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 18px;
 }
 
+/* Logo ngôn ngữ */
 .language-logo {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 6px;
+  border-radius: 10px;
+  padding: 5px;
+  flex-shrink: 0;
 }
 
+/* Thanh tiến độ */
+/* Thanh tiến trình */
 .progress-bar {
-  flex: 1;
-  background: #1e293b;
-  border-radius: 8px;
-  height: 12px;
   position: relative;
-  overflow: hidden;
-}
-
-.progress {
-  background: linear-gradient(90deg, #38bdf8, #3b82f6);
-  height: 100%;
+  width: 100%;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  width: 0%;
-  transition: width 1.2s ease-in-out;
+  overflow: hidden;
+  margin-top: 10px;
 }
 
+/* Phần chạy màu */
+.progress {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #00e0ff, #00bcd4);
+  border-radius: 8px;
+  transition: width 1s ease-in-out;
+}
+
+/* Hiển thị phần trăm */
 .progress-percent {
   position: absolute;
   right: 8px;
-  top: -25px;
-  color: #f8fafc;
-  font-size: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
 }
 
 /* ======================= */
