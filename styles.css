@@ -286,6 +286,7 @@ body {
 /* 🔹 Phần KỸ NĂNG Section */
 /* ======================= */
 
+/* 🎯 Phần kỹ năng */
 #ky-nang {
   padding: 60px 20px;
   text-align: center;
@@ -304,7 +305,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* Bố cục container */
+/* --- Bố cục container --- */
 #ky-nang .skills-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -313,31 +314,26 @@ body {
   gap: 25px;
 }
 
-/* Thẻ kỹ năng */
+/* --- Thẻ kỹ năng --- */
 .skill-item {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 15px;
   padding: 25px 20px;
   text-align: center;
   transition: all 0.4s ease;
-  transform: translateY(30px);
-  opacity: 0;
-}
-
-/* Khi hiển thị (bằng JS scroll effect) */
-.skill-item.visible {
+  /* ❌ Loại bỏ hiệu ứng xuất hiện ban đầu */
+  transform: none;
   opacity: 1;
-  transform: translateY(0);
 }
 
-/* Hover hiệu ứng */
+/* --- Hover hiệu ứng --- */
 .skill-item:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 180, 216, 0.4);
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* Icon kỹ năng */
+/* --- Icon kỹ năng --- */
 .skill-item i {
   font-size: 38px;
   color: #00eaff;
@@ -349,7 +345,7 @@ body {
   transform: scale(1.2) rotate(8deg);
 }
 
-/* Tên kỹ năng */
+/* --- Tên kỹ năng --- */
 .skill-item h4 {
   font-size: 20px;
   font-weight: 600;
@@ -357,7 +353,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* Mô tả nhỏ */
+/* --- Mô tả nhỏ --- */
 .skill-item p {
   font-size: 15px;
   color: #ccc;
@@ -730,22 +726,59 @@ body {
 /* 📱 RESPONSIVE DESIGN - Toàn trang        */
 /* ======================================== */
 
-/* --- Màn hình nhỏ hơn 1024px (Tablet) --- */
+/* --- Màn hình lớn (>=1200px) --- */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .banner-content h1 {
+    font-size: 4rem;
+  }
+
+  .banner-content p {
+    font-size: 1.3rem;
+  }
+
+  #du-an .project-card {
+    padding: 30px;
+  }
+}
+
+/* --- Laptop vừa (<=1024px) --- */
 @media (max-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    padding: 12px 24px;
+  }
+
+  /* Banner */
   .banner-container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .banner-image img {
-    max-width: 350px;
-    margin-bottom: 20px;
+    gap: 40px;
   }
 
   .banner-content {
     text-align: center;
   }
 
+  .banner-image img {
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* Kỹ năng */
+  #ky-nang .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  /* Dự án */
+  .content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  /* Ngôn ngữ */
   .skills-container {
     flex-direction: column;
     align-items: center;
@@ -754,121 +787,141 @@ body {
   .languages-column,
   .libraries-column {
     width: 100%;
-    text-align: center;
-  }
-
-  .content-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .navbar {
-    padding: 10px 20px;
   }
 }
 
-/* --- Màn hình nhỏ hơn 768px (Điện thoại ngang / nhỏ) --- */
+/* --- Điện thoại ngang / máy tính bảng nhỏ (<=768px) --- */
 @media (max-width: 768px) {
-  /* Navbar chuyển thành menu hamburger */
+  /* Navbar: bật menu hamburger */
+  .hamburger {
+    display: flex;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
     position: absolute;
     top: 65px;
     left: 0;
+    width: 100%;
+    background: rgba(10, 25, 47, 0.95);
+    text-align: center;
     padding: 20px 0;
-    z-index: 999;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .hamburger {
-    display: flex;
+  .nav-links a {
+    font-size: 18px;
+    padding: 10px 0;
   }
 
+  /* Banner */
   .banner-content h1 {
-    font-size: 40px;
+    font-size: 2.8rem;
   }
 
   .banner-content h2 {
-    font-size: 24px;
+    font-size: 1.4rem;
   }
 
   .banner-content p {
+    font-size: 1rem;
+  }
+
+  .banner-image img {
+    width: 240px;
+    height: 240px;
+  }
+
+  /* Kỹ năng */
+  #ky-nang h2 {
+    font-size: 26px;
+  }
+
+  .skill-item {
+    padding: 20px;
+  }
+
+  .skill-item i {
+    font-size: 30px;
+  }
+
+  .skill-item h4 {
     font-size: 18px;
   }
 
-  .flip-card {
-    width: 100px;
-    height: 100px;
+  /* Sở thích */
+  .hobbies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
-  .flip-card-back h4 {
-    font-size: 14px;
-  }
-
-  .flip-card-back p {
-    font-size: 11px;
-  }
-
-  #ngon-ngu h2,
-  #ky-nang h2,
-  #du-an h2,
-  #chung-chi h2,
-  #lien-he h2 {
-    font-size: 26px;
+  /* Dự án */
+  #du-an h2 {
+    font-size: 28px;
   }
 
   .project-card {
     padding: 20px;
   }
 
-  .skill-item {
-    font-size: 16px;
+  .project-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Liên hệ */
+  #lien-he h2 {
+    font-size: 26px;
+  }
+
+  .social-icons {
+    gap: 18px;
   }
 
   .social-icon {
     width: 45px;
     height: 45px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
-/* --- Màn hình nhỏ hơn 480px (Điện thoại đứng) --- */
+/* --- Điện thoại đứng (<=480px) --- */
 @media (max-width: 480px) {
-  .logo {
-    font-size: 20px;
+  /* Tổng thể */
+  body {
+    font-size: 15px;
   }
 
+  .logo {
+    font-size: 18px;
+  }
+
+  /* Banner */
   .banner-content h1 {
-    font-size: 32px;
+    font-size: 2.2rem;
   }
 
   .banner-content h2 {
-    font-size: 20px;
+    font-size: 1.1rem;
   }
 
   .banner-content p {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 
-  .cta-button {
-    font-size: 16px;
-    padding: 10px 18px;
+  .banner-image img {
+    width: 200px;
+    height: 200px;
   }
 
-  .hobbies-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Kỹ năng */
+  #ky-nang .skills-container {
+    grid-template-columns: 1fr;
   }
 
-  .flip-card {
-    width: 90px;
-    height: 90px;
-  }
-
+  /* Ngôn ngữ */
   .language-item {
     flex-direction: column;
     align-items: flex-start;
@@ -879,16 +932,23 @@ body {
     width: 100%;
   }
 
+  /* Sở thích */
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Dự án */
   .project-card h3 {
-    font-size: 18px;
+    font-size: 1rem;
   }
 
   .project-card p {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 
+  /* Footer */
   .contact-info {
-    font-size: 16px;
+    font-size: 0.9rem;
   }
 
   .footer-copy {
