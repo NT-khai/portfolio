@@ -2,33 +2,31 @@
 document.querySelector(".hamburger").addEventListener("click", () => {
   document.querySelector(".nav-links").classList.toggle("active");
 });
+// // Smooth Scroll
+// document.querySelectorAll(".nav-links a").forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const target = document.querySelector(this.getAttribute("href"));
+//     target.scrollIntoView({ behavior: "smooth" });
+//     document.querySelector(".nav-links").classList.remove("active");
+//   });
+// });
 
-// Smooth Scroll
-document.querySelectorAll(".nav-links a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    target.scrollIntoView({ behavior: "smooth" });
-    document.querySelector(".nav-links").classList.remove("active");
-  });
-});
-
-// Particles
-const particlesContainer = document.getElementById("particles");
-const numParticles = 60;
-for (let i = 0; i < numParticles; i++) {
-  const p = document.createElement("div");
-  p.classList.add("particle");
-  const size = Math.random() * 4 + 2;
-  p.style.width = `${size}px`;
-  p.style.height = `${size}px`;
-  p.style.left = `${Math.random() * 100}vw`;
-  p.style.animationDuration = `${Math.random() * 10 + 8}s`;
-  p.style.animationDelay = `${Math.random() * 5}s`;
-  p.style.opacity = Math.random() * 0.6 + 0.3;
-  particlesContainer.appendChild(p);
-}
-
+// // Particles
+// const particlesContainer = document.getElementById("particles");
+// const numParticles = 60;
+// for (let i = 0; i < numParticles; i++) {
+//   const p = document.createElement("div");
+//   p.classList.add("particle");
+//   const size = Math.random() * 4 + 2;
+//   p.style.width = `${size}px`;
+//   p.style.height = `${size}px`;
+//   p.style.left = `${Math.random() * 100}vw`;
+//   p.style.animationDuration = `${Math.random() * 10 + 8}s`;
+//   p.style.animationDelay = `${Math.random() * 5}s`;
+//   p.style.opacity = Math.random() * 0.6 + 0.3;
+//   particlesContainer.appendChild(p);
+// }
 // Typing Effect
 const dynamicText = document.querySelector(".dynamic-text");
 const texts = ["BACKEND ENGINEER"];

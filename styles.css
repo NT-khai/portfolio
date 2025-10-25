@@ -8,8 +8,8 @@
 /* Cấu hình chung */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #080c18 100%);
+  color: #0c0c0c;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
