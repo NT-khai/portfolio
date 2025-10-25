@@ -1187,27 +1187,3 @@ body {
     font-size: 28px;
   }
 }
-
-/* Light Mode */
-@media (prefers-color-scheme: light) {
-  body {
-    background: #f0f4f8;
-    color: #333;
-  }
-  .about-column,
-  .skills-column,
-  .skill-item,
-  .hobbies-slider {
-    background: rgba(255, 255, 255, 0.9);
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-  .logo-loop-container::before {
-    background: linear-gradient(to right, #f0f4f8, transparent);
-  }
-  .logo-loop-container::after {
-    background: linear-gradient(to left, #f0f4f8, transparent);
-  }
-  .logo-item img {
-    background: rgba(0, 0, 0, 0.05);
-  }
-}
