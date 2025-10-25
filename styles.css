@@ -8,7 +8,7 @@
 /* Cấu hình chung */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(135deg, #1a1a2e 0%, #080c18 100%);
+  background-color: #000;
   color: #0c0c0c;
   overflow-x: hidden;
   position: relative;
@@ -31,7 +31,7 @@ body {
 
 .particle {
   position: absolute;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(26, 19, 19, 0.2);
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   animation: float 15s infinite linear;
@@ -55,8 +55,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(51, 51, 51, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(26, 19, 19, 0.2);
   padding: 15px 30px;
   position: fixed;
   width: 100%;
@@ -153,7 +152,7 @@ body {
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
-    background: rgba(20, 20, 40, 0.95);
+    background: rgba(26, 19, 19, 0.2);
     backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
@@ -210,7 +209,7 @@ body {
 .banner-content {
   width: 650px;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(26, 19, 19, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
