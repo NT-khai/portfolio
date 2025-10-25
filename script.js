@@ -205,7 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // === Hobbies Slider ===
   const hobbies = [
     { img: "img3.jpg", title: "Nghe Nhạc", desc: "Thư giãn và tập trung" },
-    { img: "img2.jpg", title: "Cà Phê Bệt", desc: "Tỉnh tảo & sáng tạo" },
+    { img: "img2.jpg", title: "Cà Phê Bệt", desc: "Tỉnh táo & sáng tạo" },
     { img: "img4.jpg", title: "Du Lịch", desc: "Khám phá & trải nghiệm" },
   ];
 
