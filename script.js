@@ -285,16 +285,19 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Ứng dụng đặt vé xe",
       desc: "Sử dụng ngôn ngữ Python để tạo kết nối mạng theo mô hình <strong>client-server</strong><br><strong>Đóng góp: 100%</strong>",
       link: "https://github.com/khaint14/Nhom6-final",
+      img: "datxe.jpg", // thay bằng ảnh thực tế sau
     },
     {
       title: "Trang web ứng dụng React",
       desc: "Sử dụng <strong>React, Tailwind CSS</strong> để tạo trang web tĩnh hoàn chỉnh<br><strong>Đóng góp: 100%</strong>",
       link: "https://react-tailwind-peach.vercel.app/",
+      img: "react.jpg",
     },
     {
       title: "Portfolio cá nhân",
       desc: "Thiết kế và phát triển portfolio này với <strong>HTML, CSS, JavaScript</strong><br><strong>Đóng góp: 100%</strong>",
       link: "https://portfolio-u2tf.vercel.app/",
+      img: "portfolio.jpg",
     },
   ];
 
@@ -302,7 +305,9 @@ document.addEventListener("DOMContentLoaded", () => {
   projects.forEach((project) => {
     const card = document.createElement("div");
     card.className = "da-card";
+
     card.innerHTML = `
+      <img src="${project.img}" alt="${project.title}" class="da-card-img" loading="lazy">
       <div class="da-card-content">
         <h3>${project.title}</h3>
         <p>${project.desc}</p>
@@ -311,9 +316,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
       </div>
     `;
+
     grid.appendChild(card);
   });
 
-  // Hiệu ứng AOS nếu có
+  // Refresh AOS nếu có
   if (typeof AOS !== "undefined") AOS.refresh();
 });

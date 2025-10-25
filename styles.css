@@ -943,6 +943,43 @@ body {
   }
 }
 
+.da-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.da-card:hover .da-card-img {
+  transform: scale(1.05);
+}
+
+.da-card-content {
+  padding: 28px;
+  text-align: left;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.da-card .da-link {
+  margin-top: auto;
+}
+
+/* Responsive hình ảnh */
+@media (max-width: 768px) {
+  .da-card-img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 48048px) {
+  .da-card-img {
+    height: 140px;
+  }
+}
+
 @media (max-width: 480px) {
   .da-grid {
     grid-template-columns: 1fr;
